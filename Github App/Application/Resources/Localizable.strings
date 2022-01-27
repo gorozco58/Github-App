@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Github App
+
+  Created by Giovanny Orozco Loaiza on 27/01/22.
+  
+*/
+
+"author" = "by: %@";
+"repositoriesTitle" = "Top Repositories";
+"contributions" = "Contributions: %@";

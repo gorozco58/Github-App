@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="RepositoryCell" customModule="Github_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9l3-Ty-cnq">
+                        <rect key="frame" x="12" y="12" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Aa8-29-dRy"/>
+                            <constraint firstAttribute="width" constant="50" id="bFr-2w-6il"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-AX-loQ">
+                        <rect key="frame" x="74" y="12" width="234" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S45-Fz-2H6">
+                        <rect key="frame" x="74" y="38" width="234" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by: name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckn-3u-8bW">
+                        <rect key="frame" x="74" y="61" width="234" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ckn-3u-8bW" firstAttribute="trailing" secondItem="S45-Fz-2H6" secondAttribute="trailing" id="526-Ti-3Op"/>
+                    <constraint firstItem="S45-Fz-2H6" firstAttribute="top" secondItem="U7g-AX-loQ" secondAttribute="bottom" constant="4" id="9do-tY-3OQ"/>
+                    <constraint firstItem="S45-Fz-2H6" firstAttribute="leading" secondItem="U7g-AX-loQ" secondAttribute="leading" id="HNa-A2-Dd8"/>
+                    <constraint firstItem="U7g-AX-loQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="JYo-AJ-S8v"/>
+                    <constraint firstAttribute="trailing" secondItem="U7g-AX-loQ" secondAttribute="trailing" constant="12" id="ONm-Ml-aDj"/>
+                    <constraint firstItem="ckn-3u-8bW" firstAttribute="top" secondItem="S45-Fz-2H6" secondAttribute="bottom" constant="4" id="QbQ-vD-rcq"/>
+                    <constraint firstAttribute="bottom" secondItem="ckn-3u-8bW" secondAttribute="bottom" constant="12" id="ZJp-kg-0Ur"/>
+                    <constraint firstItem="ckn-3u-8bW" firstAttribute="leading" secondItem="S45-Fz-2H6" secondAttribute="leading" id="ZnI-Po-ber"/>
+                    <constraint firstItem="9l3-Ty-cnq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="bay-E4-JRV"/>
+                    <constraint firstItem="U7g-AX-loQ" firstAttribute="leading" secondItem="9l3-Ty-cnq" secondAttribute="trailing" constant="12" id="eHH-fg-gyI"/>
+                    <constraint firstItem="9l3-Ty-cnq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="lcI-n0-U6o"/>
+                    <constraint firstItem="S45-Fz-2H6" firstAttribute="trailing" secondItem="U7g-AX-loQ" secondAttribute="trailing" id="u8s-hi-Lhc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="S45-Fz-2H6" id="uXB-Ek-3sC"/>
+                <outlet property="nameLabel" destination="U7g-AX-loQ" id="zcW-yt-1yY"/>
+                <outlet property="ownerLabel" destination="ckn-3u-8bW" id="gSb-rO-bhd"/>
+                <outlet property="pictureImageView" destination="9l3-Ty-cnq" id="OhB-SP-Crd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
