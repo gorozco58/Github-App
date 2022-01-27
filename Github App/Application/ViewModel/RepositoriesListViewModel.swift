@@ -9,9 +9,20 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-enum RepositoriesListViewModelAction {
+enum RepositoriesListViewModelAction: Equatable {
     case reloadData
     case repositorySelected(Repository)
+    
+    static func == (lhs: Self, rhs: Self) -> Bool {
+        switch (lhs, rhs) {
+        case (.reloadData, .reloadData):
+            return true
+        case (.repositorySelected, .repositorySelected):
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 protocol RepositoriesListViewModelProtocol: RepositoriesViewControllerDataSourceProvider {
